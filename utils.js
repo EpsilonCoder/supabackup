@@ -14,33 +14,10 @@ export class Database {
         
         return data
     }
-    // async add(row){
-    //     const { data, error } = await this.supabase
-    //     .from(this.table)
-    //     .insert([row])
-
-    //     return data
-    // }
-    // async modify(id, newObjet){
-    //     const { data, error } = await this.supabase
-    //     .from(this.table)
-    //     .update(newObjet)
-    //     .match({ id })
-
-    //     return data
-    // }
-    // async delete(id){
-    //     const { data, error } = await this.supabase
-    //         .from(this.table)
-    //         .delete()
-    //         .match({ id })
-            
-    //     return data;
-    // }
 }
 
 export class Storage {
-    constructor(url, sevicekey, bucket) {
+    constructor(url, sevicekey) {
         this.url = url;
         this.sevicekey = sevicekey;
         this.supastorage = createClient(url, sevicekey).storage;
@@ -64,5 +41,4 @@ export class Storage {
 
         return {data, error};
     }
-
 }

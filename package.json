@@ -1,7 +1,7 @@
 {
   "name": "supabackup",
   "version": "0.0.1",
-  "description": "",
+  "description": "Supabackup is a node package, that allows you to easily perform your supabase backup operations for free. This package creates a backup of your given database tables.",
   "main": "supabackup.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

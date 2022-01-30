@@ -21,7 +21,3 @@ export const backup = async (supabackup, bucket, tables) => {
         });
     }
 }
-
-export const restore = async () => {
-    console.log('comming..');
-}
